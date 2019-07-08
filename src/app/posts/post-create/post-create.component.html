@@ -5,14 +5,17 @@
             placeholder="Place title here"
             matInput type="text"
             name="title"
-            ngModel>
+            ngModel
+            required
+            minlength="3">
         </mat-form-field>
         <mat-form-field>
           <textarea
             placeholder="Place comment here"
             matInput rows="6"
             name="content"
-            ngModel>
+            ngModel
+            required>
           </textarea>
         </mat-form-field>
         <button mat-raised-button color="accent" type="submit">Save Post</button>
