@@ -11,9 +11,11 @@ export class PostCreateComponent {
   @Output() postCreated = new EventEmitter();
 
   onAddPost() {
-    this.postCreated.emit({
+    const post = {
       title: this.enteredTitle,
       content: this.enteredContent
-    });
+    };
+
+    this.postCreated.emit(post);
   }
 }
